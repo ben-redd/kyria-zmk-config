@@ -9,12 +9,13 @@
 &left_encoder { resolution = <1>; };
 &right_encoder { resolution = <1>; };
 
+#define DEFAULT 0
+#define LOWER   1
+#define RAISE   2
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
-		#define DEFAULT 0
-		#define LOWER   1
-		#define RAISE   2
 
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
@@ -29,8 +30,7 @@
 	            &kp LGUI &kp LCTRL &kp LALT &kp LGUI &mo Lower         &mo RAISE  &kp SPACE  &kp ENTER &kp BSPC &kp RALT
 			>;
 
-			sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP &inc_dec_cp C_BRI_DN C_BRI_UP>;
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp LC(LEFT) dsdafgffsgLC(RIGHT)>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 		
 // 		layer_1 draft {
