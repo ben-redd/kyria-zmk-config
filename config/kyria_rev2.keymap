@@ -30,10 +30,10 @@
 			>;
 
 			sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP &inc_dec_cp C_BRI_DN C_BRI_UP>;
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp LC(LEFT) LC(RIGHT)>;
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp LC(LEFT) dsdafgffsgLC(RIGHT)>;
 		};
 		
-// 		layer_1 {
+// 		layer_1 draft {
 // // ---------------------------------------------------------------------------------------------------------------------------------
 // // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
 // // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
