@@ -19,15 +19,15 @@
 
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
+// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   | DELETE |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
-//                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |    LEFT | RIGHT |        | UP | DOWN |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+//                     | GUI  | CTRL  | L-ALT |  GUI  | LOWER |        | RAISE |  SPACE  | ENTER  | BSPC  | R-ALT |
 			bindings = <
 	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp DELETE
 	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LEFT &kp RIGHT         &kp UP &kp DOWN &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LSHFT
-	            &kp LGUI &kp LCTRL &kp LALT &kp LGUI &mo Lower         &mo RAISE  &kp SPACE  &kp ENTER &kp BSPC &kp RALT
+	            &kp LGUI &kp LCTRL &kp LALT &kp LGUI &mo LOWER         &mo RAISE  &kp SPACE  &kp ENTER &kp BSPC &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
